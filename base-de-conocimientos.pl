@@ -1,25 +1,68 @@
-carrera(informatica, ciencias).
-carrera(electronica, ingenieria).
-carrera(arquitectura, arte).
-carrera(medicina, salud).
-carrera(administracion, negocios).
-carrera(contabilidad, negocios).
-carrera(ingenieria_ambiental, ciencias).
-carrera(derecho, humanidades).
-carrera(psicologia, ciencias).
+Hechos
+carrera(arquitectura).
+carrera(ingenieria).
+carrera(medicina).
+carrera(administracion).
+carrera(economia).
+carrera(contabilidad).
+carrera(derecho).
+carrera(psicologia).
+carrera(ciencias_computacionales).
+carrera(ciencias_politicas).
+carrera(ciencias_sociales).
+carrera(artes_plasticas).
+carrera(diseno_grafico).
+carrera(publicidad).
+carrera(cine).
+carrera(teatro).
+carrera(musica).
+carrera(educacion).
 carrera(comunicacion).
+carrera(historia).
 
-% Si al usuario le gusta trabajar con computadoras, se recomienda informática o electrónica.
-recomendacion(X) :- gusto_computadoras(si), carrera(X, ciencias).
-% Si al usuario le gustan las matemáticas, se recomienda ingeniería o contabilidad.
-recomendacion(X) :- gustan_matematicas(si), carrera(X, ingenieria); carrera(X, negocios).
-% Si al usuario quiere trabajar en el área de la salud, se recomienda medicina.
-recomendacion(X) :- area_salud(si), carrera(X, salud).
-% Si al usuario es creativo, se recomienda arquitectura o comunicación.
-recomendacion(X) :- es_creativo(si), carrera(X, arte).
-% Si al usuario le gusta trabajar con el medio ambiente, se recomienda ingeniería ambiental.
-recomendacion(X) :- gusto_medio_ambiente(si), carrera(X, ciencias).
-% Si al usuario quiere trabajar en el área de negocios, se recomienda administración o contabilidad.
-recomendacion(X) :- area_negocios(si), carrera(X, negocios).
-% Si al usuario es más humano, se recomienda derecho o psicología.
-recomendacion(X) :- es_humano(si), carrera(X, humanidades).
+
+% Regla 1: ¿Le gusta trabajar con números?
+pregunta1 :- write('¿Le gusta trabajar con números? (si/no)'), nl, 
+read(Response), 
+(Response = si).
+
+% Regla 2: ¿Le gusta trabajar con personas?
+pregunta2 :- write('¿Le gusta trabajar con personas? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 3: ¿Le gusta trabajar con tecnología?
+pregunta3 :- write('¿Le gusta trabajar con tecnología? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 4: ¿Le gusta trabajar con arte y diseño?
+pregunta4 :- write('¿Le gusta trabajar con arte y diseño? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 5: ¿Le gusta el trabajo manual?
+pregunta5 :- write('¿Le gusta el trabajo manual? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 6: ¿Prefiere trabajar en equipo o en solitario?
+pregunta6 :- write('¿Prefiere trabajar en equipo o en solitario? (equipo/solitario)'), nl, read(Response), (Response = equipo).
+
+% Regla 7: ¿Le gusta la medicina?
+pregunta7 :- write('¿Le gusta la medicina? (si/no)'), nl, 
+read(Response), 
+(Response = si).
+
+% Regla 8: ¿Le gusta la política?
+pregunta8 :- write('¿Le gusta la política? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 9: ¿Le gusta enseñar?
+pregunta9 :- write('¿Le gusta enseñar? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 10: ¿Le gusta trabajar en el área de negocios?
+pregunta10 :- write('¿Le gusta trabajar en el área de negocios? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 11: ¿Le gusta trabajar en el área legal?
+pregunta11 :- write('¿Le gusta trabajar en el área legal? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 12: ¿Le gusta trabajar con tecnología de la información?
+pregunta12 :- write('¿Le gusta trabajar con tecnología de la información? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 13: ¿Le gusta trabajar con animales?
+pregunta13 :- write('¿Le gusta trabajar con animales? (si/no)'), nl, read(Response), (Response = si).
+
+% Regla 14: ¿Le gusta el deporte?
+pregunta14 :- write('¿Le gusta el deporte? (si/no)'), nl, read(Response), (Response = si).
