@@ -1,4 +1,3 @@
-
 % Carreras en ciencias exactas
 carrera('Ingenieria Civil', [1, 2, 3]).
 carrera('Ingenieria Quimica', [1, 2, 4]).
@@ -85,7 +84,7 @@ sugerir_carreras(Respuestas) :-
     findall(NombreCarrera, (carrera(NombreCarrera, Habilidades), incluye_todas(Habilidades, Respuestas)), CarrerasPosibles),
     % Imprimir las carreras sugeridas al usuario
     writeln('\n, Las carreras que podrian gustarte son: '),
-    writeln(CarrerasSugeridas).
+    writeln(CarrerasPosibles).
 
 
 % Verifica si todas las habilidades en la lista A están incluidas en la lista B
