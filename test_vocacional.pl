@@ -4,6 +4,7 @@ carrera('Ingenieria Quimica', [1, 2, 4]).
 carrera('Ingenieria Industrial', [1, 2, 5]).
 carrera('Fisica', [1, 2]).
 carrera('Matematicas', [1]).
+carrera('Informatica', [1, 23, 24]).
 
 % Carreras en ciencias de la salud
 carrera('Medicina', [2, 4, 6]).
@@ -15,11 +16,13 @@ carrera('Psicologia', [9, 10, 11]).
 carrera('Administracion de Empresas', [5, 12, 13]).
 carrera('Contabilidad', [1, 5, 12]).
 carrera('Negocios Internacionales', [5, 14, 15]).
+carrera('Finanzas', [1, 5, 24]).
 
 % Carreras en artes y letras
 carrera('Diseno Grafico', [16, 17, 18]).
 carrera('Arquitectura', [1, 3, 16, 19]).
 carrera('Literatura', [20, 21, 22]).
+carrera('Filosofia', [8, 20, 24]).
 
 %preguntas
 pregunta('1 - Te gusta lo relacionado con matematicas?').
@@ -44,6 +47,10 @@ pregunta('19 - Te gusta lo relacionado con dibujo tecnico?').
 pregunta('20 - Te gusta lo relacionado con escritura?').
 pregunta('21 - Te gusta lo relacionado con analisis literario?').
 pregunta('22 - Te gusta lo relacionado con comunicacion escrita?').
+pregunta('23 - Te gusta lo relacionado con computadoras?').
+pregunta('24 - Te gusta lo relacionado con resolucion de problemas?').
+
+
 
 
 
